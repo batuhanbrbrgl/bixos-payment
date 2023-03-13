@@ -7,7 +7,8 @@ module.exports = {
         iconColor: '#9FA5BF',
         themeColor: '#253272',
         btnhvr: '#19E0DA',
-        iconsdiv: '#F5F8FF'
+        iconsdiv: '#F5F8FF',
+        textcolor: '#6B80A6'
       }
     }
   },

@@ -2,17 +2,15 @@
 import { Icon } from '@iconify/vue'
 </script>
 <template>
-  <div class="">
+  <div class="h-[100dvh] flex flex-col">
     <div
-      class="w-full bg-cover max-2xl:pt-10 max-lg:py-9 pt-36 pb-20 text-white bg-[url('@/assets/backgrounds.png')] h-[850px] max-sm:bg-[url('@/assets/smbg.png')] max-sm:h-[275px] max-2xl:bg-[url('@/assets/max2xl.png')] max-2xl:bg-cover max-2xl:max-h-[550px]"
+      class="w-full h-full custom-shadow bg-cover max-2xl:pt-10 max-lg:py-9 pt-36 pb-20 text-white bg-[url('@/assets/backgrounds.png')] max-sm:bg-[url('@/assets/smbg.png')] max-sm:bg-center max-sm:h-[300px] max-2xl:bg-[url('@/assets/max2xl.png')] max-2xl:bg-cover max-2xl:max-h-[550px]"
     >
-      <div
-        class="flex flex-col-reverse lg:flex-col ml-[150px] max-2xl:ml-[95px] max-sm:ml-[15px] max-lg:ml-[10px]"
-      >
+      <div class="container mx-auto flex flex-col-reverse lg:flex-col">
         <div
-          class="flex flex-col items-center space-y-5 max-sm:mt-[180px] lg:items-start lg:space-y-7"
+          class="flex flex-col items-center space-y-5 max-sm:mt-[220px] lg:items-start lg:space-y-7"
         >
-          <img class="mb-6 max-sm:mb-1 max-sm:w-44" src="./assets/bixos-logo.png" alt="" />
+          <img class="max-sm:mb-1 lg:-ml-4 max-sm:w-44" src="./assets/bixos-logo.png" alt="" />
           <h1
             class="text-center text-4xl font-black lg:text-start sm:text-[40px] lg:text-7xl text-themeColor"
           >
@@ -28,48 +26,69 @@ import { Icon } from '@iconify/vue'
                 height="28"
               />
             </div>
-            <span class="text-iconColor text-lg max-sm:text-[14px] max-sm:mt-4"
-              >Experience the future of crypto <br />
+            <span
+              class="text-textcolor font-light italic sm:text-lg leading-tight lg:leading-normal"
+              >Experience the future of <br class="block lg:hidden" />
+              crypto <br class="hidden lg:block" />
               payments with us.</span
             >
           </div>
-          <button
-            class="bg-themeColor text-white rounded-3xl hover:bg-btnhvr px-20 max-sm:px-28 py-2 max-sm:t-4 shadow-themeColor shadow-2xl text-lg"
+          <a
+            href="https://www.google.com"
+            target="_blank"
+            class="bg-themeColor cursor-pointer text-white rounded-3xl duration-300 hover:bg-btnhvr px-20 max-sm:px-28 py-2 max-sm:t-4 shadow-themeColor shadow-2xl text-lg"
           >
             JOIN WAITLIST
-          </button>
+          </a>
         </div>
       </div>
     </div>
-  </div>
-
-  <div
-    class="w-full flex flex-col justify-between max-sm:mt-80 text-iconColor lg:flex-row px-12 py-6 max-sm:mb-12 mb-16"
-  >
-    <div class="flex flex-col items-center justify-center text-lg lg:ml-28 max-sm:text-sm">
-      Don't forget to follow us on social media.
+    <div
+      class="container mx-auto w-full flex flex-col lg:justify-between max-sm:mt-80 items-center text-iconColor lg:flex-row py-10 lg:py-0 lg:h-[169px]"
+    >
+      <span class="italic items-center font-light justify-center sm:text-lg text-sm">
+        Don't forget to follow us on social media.
+      </span>
+      <div
+        class="flex lg:ml-3 items-center max-sm:flex max-sm:px-1 max-lg:px-32 max-sm:mt-4 max-lg:mt-14"
+      >
+        <a href="https://t.me/ubxscommunity" target="_blank" class="duration-300 hover:text-btnhvr">
+          <Icon icon="akar-icons:telegram-fill" class="static max-sm:w-10" height="50" />
+        </a>
+        <a
+          href="https://www.facebook.com/bixosinc/"
+          target="_blank"
+          class="duration-300 hover:text-btnhvr"
+        >
+          <Icon icon="akar-icons:facebook-fill" class="static ml-10 max-sm:w-10" height="50" />
+        </a>
+        <a
+          href="https://twitter.com/Bixosinc"
+          target="_blank"
+          class="duration-300 hover:text-btnhvr"
+        >
+          <Icon icon="akar-icons:twitter-fill" class="static ml-10 max-sm:w-10" height="50" />
+        </a>
+        <a
+          href="https://www.instagram.com/bixosinc/"
+          target="_blank"
+          class="duration-300 hover:text-btnhvr"
+        >
+          <Icon icon="ant-design:instagram-filled" class="static ml-10 max-sm:w-10" height="58" />
+        </a>
+      </div>
     </div>
     <div
-      class="flex flex-row lg:ml-3 lg:mr-60 lg:mt-6 max-sm:flex justify-between max-sm:px-1 max-lg:px-32 max-sm:mt-4 max-lg:mt-14"
+      class="w-full italic flex items-center justify-center text-xs bg-themeColor h-[61px] text-white"
     >
-      <button>
-        <Icon icon="akar-icons:telegram-fill" class="static max-sm:w-10" height="50" />
-      </button>
-      <button>
-        <Icon icon="akar-icons:facebook-fill" class="static ml-10 max-sm:w-10" height="50" />
-      </button>
-      <button>
-        <Icon icon="akar-icons:twitter-fill" class="static ml-10 max-sm:w-10" height="50" />
-      </button>
-      <button>
-        <Icon icon="akar-icons:instagram-fill" class="static ml-10 max-sm:w-10" height="50" />
-      </button>
+      <span>© Copyright 2023 BIXOS | All rights reserved</span>
     </div>
   </div>
-
-  <div
-    class="w-full flex items-center justify-center text-xs bottom-0 fixed max-lg:fixed bg-themeColor h-12 text-white"
-  >
-    <span>© Copyright 2023 BIXOS | All rights reserved</span>
-  </div>
 </template>
+<style>
+.custom-shadow {
+  box-shadow: 1px -58px 97px -10px rgba(255, 255, 255, 0.95) inset;
+  -webkit-box-shadow: 1px -58px 97px -10px rgba(255, 255, 255, 0.95) inset;
+  -moz-box-shadow: 1px -58px 97px -10px rgba(255, 255, 255, 0.95) inset;
+}
+</style>
