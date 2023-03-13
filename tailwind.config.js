@@ -6,7 +6,8 @@ module.exports = {
       colors: {
         iconColor: '#9FA5BF',
         themeColor: '#253272',
-        btnhvr: '#19E0DA'
+        btnhvr: '#19E0DA',
+        iconsdiv: '#F5F8FF'
       }
     }
   },
